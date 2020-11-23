@@ -31,3 +31,6 @@ $APPLE_GOTHIC_H: 'AppleSDGothicNeoH';
 @font-face {
   @include font_face($APPLE_GOTHIC_H, $APPLE_GOTHIC_URL + 'H');
 }
+
+$font_title: 26px;
+$font_content: 20px;

@@ -9,6 +9,7 @@ export const typography = {
         Apple_Gothic_H: 'AppleSDGothicNeoH'
     },
     size: {
-
+        s1: '26px',
+        s2: '20px'
     }
 }
