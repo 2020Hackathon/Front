@@ -1,0 +1,33 @@
+$APPLE_GOTHIC_URL: '../../assets/assets/fonts/AppleSDGothicNeo';
+
+@mixin font_face($name, $url) {
+  font-family: $name;
+  font-display: block;
+  src: url($url + '.ttf') format('truetype');
+}
+
+$APPLE_GOTHIC_EXTRABOLD: 'AppleSDGothicNeoEB';
+$APPLE_GOTHIC_BOLD: 'AppleSDGothicNeoB';
+$APPLE_GOTHIC_LIGHT: 'AppleSDGothicNeoL';
+$APPLE_GOTHIC_MIDEUM: 'AppleSDGothicNeoM';
+$APPLE_GOTHIC_H: 'AppleSDGothicNeoH';
+
+@font-face {
+  @include font_face($APPLE_GOTHIC_LIGHT, $APPLE_GOTHIC_URL + 'L');
+}
+
+@font-face {
+  @include font_face($APPLE_GOTHIC_MIDEUM, $APPLE_GOTHIC_URL + 'M');
+}
+
+@font-face {
+  @include font_face($APPLE_GOTHIC_BOLD, $APPLE_GOTHIC_URL + 'B');
+}
+
+@font-face {
+  @include font_face($APPLE_GOTHIC_EXTRABOLD, $APPLE_GOTHIC_URL + 'EB');
+}
+
+@font-face {
+  @include font_face($APPLE_GOTHIC_H, $APPLE_GOTHIC_URL + 'H');
+}
