@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "테스트";
+const BASE_URL = "172.30.1.23";
 
 export const requestAPI = async (url, body, header, method) => {
   try {
@@ -36,4 +36,3 @@ export const requestWithAccessToken = async (url, body, header, method) => {
     throw errStatus;
   }
 };
-asdjkasdjkasdjkasd
