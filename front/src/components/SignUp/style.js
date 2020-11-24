@@ -36,6 +36,21 @@ export const Input = styled.input`
     font-size: 15px;
   }
 `;
+export const Select = styled.select`
+ display: block;
+  outline: none;
+  width: 75%;
+  margin: 0 auto;
+  height: 40px;
+  border-radius: 5px;
+  border: #6385ff 1px solid;
+  margin-bottom: 30px;
+  &::placeholder {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+`
 export const Button = styled.button`
   outline: none;
   background-color: #c2d0ff;
