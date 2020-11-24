@@ -1,9 +1,17 @@
+import React from 'react';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+
+import * as Pages from './pages';
 
 function App() {
   return (
-    <div className="App">
-        dasasdef
-    </div>
+    <>
+    <BrowserRouter>
+    <Switch>
+      <Route exact="/Home" component={Pages.Home} />
+    </Switch>
+    </BrowserRouter>
+    </>
   );
 }
 
