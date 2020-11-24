@@ -21,6 +21,7 @@ const Header = ({name}) => {
                 <input placeholder="검색어를 입력하세요." />
             </div>
             <div className={cx('Header__Name')}>
+                <img alt="profile" />
                 {name}님 환영합니다!
             </div>
             <div className={cx('Header__LogOut')}>
