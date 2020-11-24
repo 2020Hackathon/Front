@@ -5,11 +5,11 @@ import * as Pages from './pages';
 function App() {
   return (
     <>
-    <BrowserRouter>
-    <Switch>
-      <Route exact="/Home" component={Pages.Home} />
-    </Switch>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/Home" component={Pages.Home} />
+        </Switch>
+      </BrowserRouter>
     </>
 
   );
