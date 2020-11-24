@@ -1,7 +1,7 @@
-$APPLE_GOTHIC_URL: '../../assets/assets/fonts/AppleSDGothicNeo';
+$APPLE_GOTHIC_URL: '../../assets/fonts/AppleSDGothicNeo';
 
 @mixin font_face($name, $url) {
-  font-family: $name;
+  font-family: $name !important;
   font-display: block;
   src: url($url + '.ttf') format('truetype');
 }

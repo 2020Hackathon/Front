@@ -9,7 +9,7 @@ const Button = ({
     content
 }) => {
     return(
-        <button className={cx('ButtonStyle')} onClick={handleFunction()}>
+        <button className={cx('ButtonStyle')} onClick={() => handleFunction()}>
             {content}
         </button>
     )

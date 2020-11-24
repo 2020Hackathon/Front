@@ -1,2 +1,55 @@
-@import 'style/color/color.scss';
-@import 'style/typography/typography.scss';
+@import '../../../style/color/color.scss';
+@import '../../../style/typography/typography.scss';
+
+@mixin box {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Header {
+  position: absolute;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px 0px 100px;
+
+  &__Logo {
+    @include box;
+  }
+
+  &__Search {
+    @include box;
+
+    &-icon {
+      width: 20px;
+    }
+
+    & input {
+      width: 40vw;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $main;
+      font-size: 20px;
+      outline: none;
+      text-align: center;
+      color: #999999;
+      padding: 10px;
+
+      &::placeholder {
+        color: #999999;
+      }
+    }
+  }
+
+  &__Name {
+    @include box;
+  }
+
+  &__LogOut {
+    display: inline-block;
+  }
+}
