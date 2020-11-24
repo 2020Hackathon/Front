@@ -7,8 +7,9 @@ function App() {
     <>
     <BrowserRouter>
     <Switch>
-      <Route exact="/Home" component={Pages.Home} />
-      <Route exact="/Login" component={Pages.LoginPage}/>
+      <Route exact path="/Home" component={Pages.Home} />
+      <Route path="/Login"  exact component={Pages.LoginPage}/>
+      <Route path="/SignUp" exact component={Pages.SignUpPage}/>
     </Switch>
     </BrowserRouter>
     </>
