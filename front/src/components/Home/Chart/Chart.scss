@@ -7,7 +7,35 @@
   height: 80vh;
   &__title {
     font-size: 20px;
-    padding-top: 50px;
+    padding-top: 55px;
     color: $darkGray;
+  }
+  &__chartWrap {
+    margin-top: 15%;
+    & ul {
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    &-item {
+      margin-bottom: 15%;
+      margin-left: 15%;
+      width: 70%;
+      text-align: left;
+      &-title {
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      &-chart {
+        font-size: 16px;
+        color: white;
+        height: 30px;
+        padding: 10px 0px 0px 20px;
+        border-radius: 10px;
+      }
+    }
   }
 }

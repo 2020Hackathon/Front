@@ -13,8 +13,22 @@
       border: none;
       font-size: 20px;
       margin-left: 80px;
+      &-activeLine {
+        color: $main;
+        // font-weight: bold;
+        .ItemList__Category-button-box {
+          width: 100%;
+        }
+      }
       &-box {
         width: 0px;
+        background-color: $main;
+        height: 5px;
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+      &-active {
+        width: 100%;
         background-color: $main;
         height: 5px;
         border-radius: 20px;
@@ -31,19 +45,24 @@
   }
 
   &__List {
+    overflow: auto !important;
     background-color: $backGround;
     width: 100%;
     height: 65vh;
     padding-top: 15px;
     padding-left: 15px;
     margin: 20px 0px 20px 0px;
+
     &-selectBox {
+      background-color: $backGround;
       text-align: right;
-      margin-right: 40px;
+      z-index: 10;
+      margin-right: 10px;
       & * {
-        margin-left: 10px;
+        margin-right: 5px;
       }
     }
+
     &-item {
       cursor: pointer;
       background-color: white;
@@ -88,7 +107,19 @@
         position: relative;
         left: 57px;
         bottom: 10px;
+        &-inline {
+          float: right;
+          position: relative;
+          left: 2.5px;
+          bottom: 10px;
+        }
       }
     }
   }
+}
+
+.NoLength {
+  margin-top: 23%;
+  font-size: 18px;
+  color: $darkGray;
 }

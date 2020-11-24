@@ -14,9 +14,6 @@
   color: $darkGray;
   appearance: none;
   line-height: 1.5;
-  &:hover {
-    background-color: rgba($color: white, $alpha: 0.7);
-  }
 
   &__arrow {
     position: relative;
