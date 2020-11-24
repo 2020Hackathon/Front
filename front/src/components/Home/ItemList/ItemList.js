@@ -35,10 +35,22 @@ const ItemList = () => {
     return(
         <div className={cx('ItemList')}>
             <div className={cx('ItemList__Category')}>
-                <button className={cx('ItemList__Category-button')}>프로젝트</button>
-                <button className={cx('ItemList__Category-button')}>대회</button>
-                <button className={cx('ItemList__Category-button')}>포트폴리오</button>
-                <button className={cx('ItemList__Category-button')}>자기소개서</button>
+                <button className={cx('ItemList__Category-button')}>
+                    프로젝트
+                    <div className={cx('ItemList__Category-button-box')}/>
+                    </button>
+                <button className={cx('ItemList__Category-button')}>
+                    대회
+                    <div className={cx('ItemList__Category-button-box')}/>
+                    </button>
+                <button className={cx('ItemList__Category-button')}>
+                    포트폴리오
+                    <div className={cx('ItemList__Category-button-box')}/>
+                    </button>
+                <button className={cx('ItemList__Category-button')}>
+                    자기소개서
+                    <div className={cx('ItemList__Category-button-box')}/>
+                    </button>
             </div>
             <div className={cx('ItemList__List')}>
                 <div className={cx('ItemList__List-selectBox')}>

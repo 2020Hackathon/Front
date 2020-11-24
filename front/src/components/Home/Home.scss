@@ -9,8 +9,17 @@
     justify-content: center;
     text-align: center;
     &-itemList {
+      width: 60vw;
+      height: 100%;
       position: relative;
-      left: 3%;
+      left: 7rem;
+      margin-top: 5%;
+    }
+    &-chart {
+      width: 25vw;
+      position: relative;
+      left: 71%;
+      top: -82vh;
     }
   }
 }
