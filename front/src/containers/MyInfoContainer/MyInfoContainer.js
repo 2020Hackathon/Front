@@ -12,21 +12,28 @@ const MyInfoContainer = () => {
             {
                 title: '학교 청원 게시판 개발인원 구합니다~',
                 description: '성실히 프로젝트에 참여해 줄 학생들을 찾습니다.',
-                day: 1,
-                isLike: true,
+                comments: 1,
+                likes: 3,
                 postInfo: 'Project'
             },
             {
                 title: 'iOS개발 미니 프로젝트 부원 모집합니다 !',
                 description: '같이 공부하는 겸 개발하실 분들 모집해요 ㅎㅎ',
-                day: 2,
-                isLike: false,
+                comments: 2,
+                likes: 9,
+                postInfo: 'Project'
+            },
+            {
+                title: '같이 프로젝트 동아리 만드실 분',
+                description: '이번 동아리 모집때 프로젝트 동아리 같이 해요!',
+                comments: 4,
+                likes: 2,
                 postInfo: 'Project'
             }],
             profileImg: PROFILE,
             schoolState: 0,
             school: 0
-    }
+    };
 
     return <MyInfo userInfo={userInfo} />
 }
