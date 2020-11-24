@@ -13,14 +13,18 @@
       border: none;
       font-size: 20px;
       margin-left: 80px;
-      transition: 0.4s;
+      &-box {
+        width: 0px;
+        background-color: $main;
+        height: 5px;
+        border-radius: 20px;
+        transition: 0.3s;
+      }
       &:hover {
         color: $main;
-        font-weight: bold;
+        // font-weight: bold;
         .ItemList__Category-button-box {
-          background-color: $main;
-          height: 5px;
-          border-radius: 20px;
+          width: 100%;
         }
       }
     }
@@ -52,10 +56,12 @@
       &:hover {
         background-color: rgba($color: white, $alpha: 0.5);
       }
+      &:active {
+        background-color: rgba($color: white, $alpha: 0.2);
+      }
       &-title {
         // font-family: $APPLE_GOTHIC_EXTRABOLD !important;
         text-align: left;
-        font-weight: bold;
         font-size: 20px;
       }
       &-content {

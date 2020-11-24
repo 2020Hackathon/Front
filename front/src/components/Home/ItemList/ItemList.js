@@ -9,14 +9,21 @@ import HEART_DEFAULT from '../../../assets/images/heat_default.png';
 
 const cx = classNames.bind(style);
 
-const ItemList = () => {
+const ItemList = ({
+    getProjectList,
+    getContestList,
+    getPortfolioList,
+    getSelfIntroductionList,
+    postItemList
+}) => {
     const ItemCard = ({
         title,
         content,
         field,
-        day,
+        endDate,
         isLike
     }) => {
+        const day = parseInt(endDate) - parseInt(new Date('yyyyMMdd').toString());
         return (
             <li className={cx('ItemList__List-item')}>
                 <div className={cx('ItemList__List-item-title')}>{title}</div>
@@ -31,63 +38,60 @@ const ItemList = () => {
             </li>
         )
     }
-
-    return(
-        <div className={cx('ItemList')}>
-            <div className={cx('ItemList__Category')}>
-                <button className={cx('ItemList__Category-button')}>
-                    프로젝트
-                    <div className={cx('ItemList__Category-button-box')}/>
-                    </button>
-                <button className={cx('ItemList__Category-button')}>
-                    대회
-                    <div className={cx('ItemList__Category-button-box')}/>
-                    </button>
-                <button className={cx('ItemList__Category-button')}>
-                    포트폴리오
-                    <div className={cx('ItemList__Category-button-box')}/>
-                    </button>
-                <button className={cx('ItemList__Category-button')}>
-                    자기소개서
-                    <div className={cx('ItemList__Category-button-box')}/>
-                    </button>
-            </div>
-            <div className={cx('ItemList__List')}>
-                <div className={cx('ItemList__List-selectBox')}>
-                    <SelectBox>
-                        <option>분야</option>
-                    </SelectBox>
-                    <SelectBox>
-                        <option>날짜순</option>
-                    </SelectBox>
+    postItemList.map((data) => {
+        const {
+            title,
+            description,
+            endDate,
+            isLike
+        } = data.post;
+        return(
+            <div className={cx('ItemList')}>
+                <div className={cx('ItemList__Category')}>
+                    <button className={cx('ItemList__Category-button')} onClick={() => getProjectList()}>
+                        프로젝트
+                        <div className={cx('ItemList__Category-button-box')} />
+                        </button>
+                    <button className={cx('ItemList__Category-button')} onClick={() => getContestList()}>
+                        대회
+                        <div className={cx('ItemList__Category-button-box')}/>
+                        </button>
+                    <button className={cx('ItemList__Category-button')}  onClick={() => getPortfolioList()}>
+                        포트폴리오
+                        <div className={cx('ItemList__Category-button-box')}/>
+                        </button>
+                    <button className={cx('ItemList__Category-button')} onClick={() => getSelfIntroductionList()}>
+                        자기소개서
+                        <div className={cx('ItemList__Category-button-box')}/>
+                        </button>
                 </div>
-                <div>
-                    <ul>
-                        <ItemCard 
-                        title="내용입니다."
-                        content="작게 들어가는 내용 입니다."
-                        field={
-                            "XD",
-                            "Figma"
-                        }
-                        day={1}
-                        isLike={true}
-                         />
-                         <ItemCard 
-                         title="내용입니다."
-                         content="작게 들어가는 내용 입니다."
-                         field={
-                             "XD",
-                             "Figma"
-                         }
-                         day={1}
-                         isLike={true}
-                          />
-                    </ul>
+                <div className={cx('ItemList__List')}>
+                    <div className={cx('ItemList__List-selectBox')}>
+                        <SelectBox>
+                            <option>분야</option>
+                        </SelectBox>
+                        <SelectBox>
+                            <option>날짜순</option>
+                        </SelectBox>
+                    </div>
+                    <div>
+                        <ul>
+                            <ItemCard 
+                            title={title}
+                            content={description}
+                            // field={
+                            //     "XD",
+                            //     "Figma"
+                            // }
+                            endDate={endDate}
+                            isLike={isLike}
+                             />
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        )
+    });
 }
 
 export default ItemList;
