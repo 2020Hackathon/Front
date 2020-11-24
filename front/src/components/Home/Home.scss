@@ -1,0 +1,16 @@
+@import '../../style/color/color.scss';
+@import '../../style/typography/typography.scss';
+
+.Home {
+  &__Header {
+  }
+  &__Content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &-itemList {
+      position: relative;
+      left: 3%;
+    }
+  }
+}
