@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 
 import classNames from 'classnames/bind';
 import style from './Header.scss';
@@ -14,7 +15,9 @@ const Header = ({name}) => {
         <>
         <div className={cx('Header')}>
             <div className={cx('Header__Logo')}>
-                <img alt={LOGO} src={LOGO} />
+                <Link to="/Home">
+                    <img alt={LOGO} src={LOGO} />
+                </Link>
             </div>
             <div className={cx('Header__Search')}>
                 <img alt={SEARCH_ICON} src={SEARCH_ICON} className={cx('Header__Search-icon')} />

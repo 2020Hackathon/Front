@@ -21,6 +21,7 @@
   &__Logo {
     @include box;
     margin-right: 20%;
+    cursor: pointer;
   }
 
   &__Search {
