@@ -1,10 +1,17 @@
 import React from 'react';
-import {Route, Switch, Redirect} from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import * as Pages from './pages';
+
 function App() {
   return (
-   <Switch>
-     <Route></Route>
-   </Switch>
+    <>
+    <BrowserRouter>
+    <Switch>
+      <Route exact="/Home" component={Pages.Home} />
+    </Switch>
+    </BrowserRouter>
+    </>
+
   );
 }
 
