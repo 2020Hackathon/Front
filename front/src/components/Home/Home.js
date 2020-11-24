@@ -14,7 +14,7 @@ const Home = () => {
         <>
         <div className={cx('Home')}>
             <div className={cx('Home__Header')}>
-                <Header/>
+                <Header name="김경훈" />
             </div>
             <div className={cx('Home__Content')}>
                 <div className={cx('Home__Content-itemList')}>

@@ -1,0 +1,45 @@
+@import '../../style/color/color.scss';
+@import '../../style/typography/typography.scss';
+
+* {
+  margin: 20000rem;
+  padding: 15rem;
+}
+
+.MyInfo {
+  &__Info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    &-user {
+      & * {
+        display: inline;
+      }
+      &-content {
+      }
+      &-profile {
+        width: 120px;
+        border-radius: 100px;
+      }
+      &-title {
+        font-weight: normal;
+        font-size: 30px;
+      }
+      &-state {
+        padding: 10px 20px;
+        background-color: #ffc163;
+        border-radius: 20px;
+        font-size: 12px;
+        color: white;
+        user-select: none;
+      }
+      &-school {
+        display: block;
+      }
+    }
+  }
+  &__post {
+    &-category {
+    }
+  }
+}

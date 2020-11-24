@@ -59,6 +59,13 @@
   &__Name {
     @include box;
     margin-left: 15%;
+    &-profileImg {
+      width: 40px;
+      border-radius: 50px;
+      vertical-align: middle;
+      margin-right: 10px;
+      cursor: pointer;
+    }
   }
 
   &__LogOut {
