@@ -9,7 +9,7 @@ import SEARCH_ICON from '../../../assets/images/searchIcon.png';
 
 const cx = classNames.bind(style);
 
-const Header = () => {
+const Header = ({name}) => {
     return (
         <>
         <div className={cx('Header')}>
@@ -21,7 +21,7 @@ const Header = () => {
                 <input placeholder="검색어를 입력하세요." />
             </div>
             <div className={cx('Header__Name')}>
-                님 환영합니다!
+                {name}님 환영합니다!
             </div>
             <div className={cx('Header__LogOut')}>
                 <Button content="로그아웃" handleFunction={() => alert("로그아웃 하시겠습니까?")} />

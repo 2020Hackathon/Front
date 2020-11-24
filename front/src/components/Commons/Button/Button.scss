@@ -4,7 +4,7 @@
 .ButtonStyle {
   background-color: $main;
   font-family: $APPLE_GOTHIC_MIDEUM;
-  font-size: 14px;
+  font-size: 12px;
   border: none;
   color: white;
   width: 90px;
@@ -15,6 +15,7 @@
   &:hover {
     background-color: rgba($color: $main, $alpha: 0.7);
     box-shadow: 0.19rem 0.19rem rgba($main, 0.2);
+    cursor: pointer;
   }
 
   &:active {
