@@ -115,6 +115,14 @@
           padding: 15px;
           text-align: center;
           margin-left: 30px;
+          transition: 0.4s;
+          cursor: pointer;
+          &:hover {
+            background-color: rgba($color: $main, $alpha: 0.1);
+          }
+          &:active {
+            background-color: rgba($color: $main, $alpha: 0.14);
+          }
 
           &-title {
             margin-top: 30px;
@@ -151,6 +159,7 @@
               height: 35px;
               border-radius: 5px;
               margin-left: 10px;
+              cursor: pointer;
             }
           }
         }

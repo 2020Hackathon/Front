@@ -1,0 +1,71 @@
+@import '../../style/color/color.scss';
+@import '../../style/typography/typography.scss';
+
+.PostView {
+  &__post {
+    float: left;
+    margin-left: 3.5%;
+    width: 60vw;
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &-titleWrap {
+      height: 17vh;
+      border-radius: 18px 18px 0px 0px;
+      background-color: $backGround;
+      &-title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 65px;
+      }
+      &-date {
+        text-align: center;
+        margin-top: 30px;
+        color: $darkGray;
+      }
+      &-day {
+        position: relative;
+        left: 90%;
+        bottom: 60%;
+
+        text-align: center;
+        background-color: $main;
+        color: white;
+        width: 75px;
+        height: 24px;
+        padding-top: 9px;
+        border-radius: 30px;
+      }
+    }
+    &-content {
+      &-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 40px 0px 20px 25px;
+      }
+      &-des {
+        background-color: #f1f1f1;
+        width: 90%;
+        height: 300px;
+        margin-left: 25px;
+        padding: 30px;
+        font-size: 14px;
+      }
+    }
+    &__commentWrap {
+      &-input {
+        background-color: #f3f6ff;
+        border: 1px solid $main;
+      }
+    }
+  }
+
+  &__comment {
+    float: right;
+    margin-right: 4%;
+    background-color: blue;
+    width: 25vw;
+    height: 70vh;
+  }
+}

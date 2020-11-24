@@ -8,9 +8,10 @@ function App() {
     <BrowserRouter>
     <Switch>
       <Route exact path="/Home" component={Pages.Home} />
-      <Route path="/Login"  exact component={Pages.LoginPage}/>
+      <Route path="/"  exact component={Pages.LoginPage}/>
       <Route path="/SignUp" exact component={Pages.SignUpPage}/>
       <Route path="/MyInfo" exact component={Pages.MyInfoPage}/>
+      <Route path="/PostView" exact component={Pages.PostViewPage}/>
     </Switch>
     </BrowserRouter>
     </>
