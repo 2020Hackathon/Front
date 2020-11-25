@@ -1,6 +1,8 @@
 @import '../../../style/color/color.scss';
 @import '../../../style/typography/typography.scss';
-
+a {
+  text-decoration: none !important;
+}
 .ItemList {
   &__Category {
     text-align: left;
@@ -82,6 +84,8 @@
         // font-family: $APPLE_GOTHIC_EXTRABOLD !important;
         text-align: left;
         font-size: 20px;
+        color: #000;
+        outline: none;
       }
       &-content {
         text-align: left;

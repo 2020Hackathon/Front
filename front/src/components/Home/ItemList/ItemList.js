@@ -19,7 +19,9 @@ const ItemCard = ({
 }) => {
     return (
         <li className={cx('ItemList__List-item')}>
+            <Link to='/PostView'>
             <div className={cx('ItemList__List-item-title')}>{title}</div>
+            </Link>
             <div className={cx('ItemList__List-item-content')}>{description}</div>
             {
                 day === undefined ? 

@@ -31,7 +31,7 @@ const Header = ({name}) => {
                 {name}님 환영합니다!
             </div>
             <div className={cx('Header__LogOut')}>
-                <Link to='/Login'>
+                <Link to='/'>
                 <Button content="로그아웃" handleFunction={() => alert("로그아웃 하시겠습니까?")} />
                 </Link>
             </div>
