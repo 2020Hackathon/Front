@@ -1,5 +1,6 @@
 # 📚취준진담 Web Front
 >2020 3개 소프트웨어 마이스터고등학교 제주 해커톤🌊 프로젝트 [취준진담🍻]입니다.
+![로그인 페이지](https://user-images.githubusercontent.com/55439512/100607567-7b0f5480-334e-11eb-89f0-439ae2931aea.png)
 
 
 ### 팀원👩‍💻👨‍💻
@@ -33,6 +34,9 @@
 3.__소마고 학생들의 취업 현황
   + 늘 궁금했던 다른 학교 학생들의 취업 현황을 한눈에
 
+![메인페이지](https://user-images.githubusercontent.com/55439512/100607575-7d71ae80-334e-11eb-9538-064c9781201d.png)
+![마이페이지](https://user-images.githubusercontent.com/55439512/100607574-7d71ae80-334e-11eb-81ae-9c71f88aa654.png)
+![마이페이지 - 내 게시물 보기](https://user-images.githubusercontent.com/55439512/100607573-7cd91800-334e-11eb-9ab4-caf4ac095bca.png)
 
 
 ### 사용된 기술📚📝
@@ -41,7 +45,7 @@
 
 > 💻Web FrontEnd : React, JSX, Mobx, Redux, Styled component, Scss
 
-> 🔋BackEnd : C#
+> 🔋BackEnd : C#, Typescript
 
 > 🎨UI/UX Design : Figma
   
